@@ -83,13 +83,6 @@ echo "ba8c26eb0dbbc91c0bf40be632cc06b4c8b45c37d61f4a8ae5ace19a5b66ab35  rbn-inst
 
 ## Older versions
 
-This page (`main`) is **only the current** installer. Frozen older builds are on **[Releases](https://github.com/U00A3/mainnet.installer/releases)** (one card per version, with `.run` and SHA-256).
+This page (`main`) has **only the current** installer.
 
-Example:
-
-```bash
-wget -O 'rbn-installer-mainnet-v1.3.22.run' --show-progress \
-  'https://github.com/U00A3/mainnet.installer/releases/download/v1.3.22/rbn-installer-mainnet-v1.3.22.run'
-```
-
-Use the **SHA-256 from that release**, not the hash on this page.
+Previous builds: **[Releases](https://github.com/U00A3/mainnet.installer/releases)** - one card per version, with the `.run` file and its SHA-256. Use that card’s checksum, not the hash on this page.
