@@ -49,19 +49,6 @@ If you see **`rbn-installer-mainnet-v1.3.25.run: OK`**, the file matches the SHA
 
 If verification **fails**, delete the file (`rm -f 'rbn-installer-mainnet-v1.3.25.run'`) before you try again.
 
-### Older versions
-
-`main` keeps only the **current** installer. Previous builds stay on **git tags** (`v1.3.5`, `v1.3.22`, …): [tags](https://github.com/U00A3/mainnet.installer/tags).
-
-Example (replace the tag and file name):
-
-```bash
-wget -O 'rbn-installer-mainnet-v1.3.22.run' --show-progress \
-  'https://raw.githubusercontent.com/U00A3/mainnet.installer/v1.3.22/rbn-installer-mainnet-v1.3.22.run'
-```
-
-Use the **README and SHA-256 from that same tag**, not the values on `main`.
-
 ## Integrity (SHA-256)
 
 Before you run the installer, the file’s **SHA-256** must match what Redbelly publishes for operators on **official channels**, for example the [Vine developer portal](https://vine.redbelly.network/) (Node Onboarding Resources and related pages) and **Discord** / other operator announcements. The hash below is copied here for convenience; **if it disagrees with an official channel, trust the channel** and treat this README as outdated.
@@ -91,3 +78,18 @@ echo "ba8c26eb0dbbc91c0bf40be632cc06b4c8b45c37d61f4a8ae5ace19a5b66ab35  rbn-inst
 ```
 
 **`rbn-installer-mainnet-v1.3.25.run: OK`** means the file matches this README’s hash. If the command reports a failure, **do not run** the installer; remove the file and obtain a fresh copy, then compare again with Vine / Discord / other official operator comms.
+
+---
+
+## Older versions
+
+This page (`main`) is **only the current** installer. Frozen older builds are on **[Releases](https://github.com/U00A3/mainnet.installer/releases)** (one card per version, with `.run` and SHA-256).
+
+Example:
+
+```bash
+wget -O 'rbn-installer-mainnet-v1.3.22.run' --show-progress \
+  'https://github.com/U00A3/mainnet.installer/releases/download/v1.3.22/rbn-installer-mainnet-v1.3.22.run'
+```
+
+Use the **SHA-256 from that release**, not the hash on this page.
