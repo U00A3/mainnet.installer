@@ -6,7 +6,7 @@
 
 Self-extracting installer for running a Redbelly mainnet node.
 
-**Last mirror update:** 2026-09-11 (UTC)
+**Last mirror update:** 2026-09-13 (UTC)
 
 ## About this repository
 
@@ -48,6 +48,19 @@ wget -O 'rbn-installer-mainnet-v1.3.25.run' --show-progress \
 If you see **`rbn-installer-mainnet-v1.3.25.run: OK`**, the file matches the SHA-256.
 
 If verification **fails**, delete the file (`rm -f 'rbn-installer-mainnet-v1.3.25.run'`) before you try again.
+
+### Older versions
+
+`main` keeps only the **current** installer. Previous builds stay on **git tags** (`v1.3.5`, `v1.3.22`, …): [tags](https://github.com/U00A3/mainnet.installer/tags).
+
+Example (replace the tag and file name):
+
+```bash
+wget -O 'rbn-installer-mainnet-v1.3.22.run' --show-progress \
+  'https://raw.githubusercontent.com/U00A3/mainnet.installer/v1.3.22/rbn-installer-mainnet-v1.3.22.run'
+```
+
+Use the **README and SHA-256 from that same tag**, not the values on `main`.
 
 ## Integrity (SHA-256)
 
